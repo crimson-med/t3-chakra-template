@@ -79,29 +79,22 @@ export const Menu = () => {
           <Button
             as={"a"}
             fontSize={"sm"}
-            fontWeight={400}
+            // display={{ base: "none", md: "inline-flex" }}
+            minH={"30px"}
+            padding={"0 10px"}
+            textTransform={"uppercase"}
             variant={"link"}
-            _hover={{ cursor: "pointer" }}
+            fontWeight={600}
+            color={"white"}
+            bg={"pink.400"}
+            _hover={{
+              cursor: "pointer",
+              bg: "pink.300",
+            }}
             onClick={() => (sessionData ? signOut() : signIn())}
           >
-            {sessionData ? "Sign Out" : "Sign In"}
+            {sessionData ? "Sign Out" : "Sign In / Sign Up"}
           </Button>
-          {!sessionData && (
-            <Button
-              as={"a"}
-              display={{ base: "none", md: "inline-flex" }}
-              fontSize={"sm"}
-              fontWeight={600}
-              color={"white"}
-              bg={"pink.400"}
-              href={"#"}
-              _hover={{
-                bg: "pink.300",
-              }}
-            >
-              Sign Up
-            </Button>
-          )}
         </Stack>
       </Flex>
 

@@ -65,3 +65,11 @@ Template based off: https://create.t3.gg/
 Modified by: Burlet Mederic
 
 Github: https://github.com/crimson-med
+
+## Screenshot
+
+![Home](./doc/home.png)
+
+![Pricing](./doc/pricing.png)
+
+![Login](./doc/login.png)
